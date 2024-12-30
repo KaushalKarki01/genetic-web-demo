@@ -1,5 +1,9 @@
 import { useState } from "react";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import {
+  createBrowserRouter,
+  Navigate,
+  RouterProvider,
+} from "react-router-dom";
 import LoginPage from "./auth/LoginPage";
 import ProtectedRoute from "./auth/ProtectedRoute";
 import Register from "./auth/Register";
@@ -18,6 +22,10 @@ function App() {
     setUser(null);
   }
   const router = createBrowserRouter([
+    {
+      path: "/",
+      element: user ? <Navigate to="/dashboard" /> : <Navigate to="/login" />,
+    },
     {
       path: "/dashboard",
       element: (
