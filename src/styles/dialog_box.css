@@ -1,0 +1,9 @@
+.dialog-box {
+  width: 5rem;
+  height: 20vh;
+  background-color: green;
+  z-index: 10;
+  position: fixed;
+  top: 10;
+  right: 10;
+}

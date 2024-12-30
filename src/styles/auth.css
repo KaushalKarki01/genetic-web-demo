@@ -1,0 +1,71 @@
+.auth-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../assets/background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.auth-container .auth-title {
+  margin-bottom: 1.8rem;
+  color: var(--text);
+}
+
+.auth-container input {
+  width: 100%;
+  outline: none;
+  padding: 1.4rem;
+  border-radius: 2rem;
+  color: var(--input);
+}
+
+.login,
+.register {
+  padding: 6rem 4rem;
+  background-color: #fff;
+  width: 50vw;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr 1.5fr;
+  align-items: center;
+  border-radius: 2rem;
+}
+
+.login div form,
+.register div form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+.login img,
+.register img {
+  width: 100%;
+}
+
+.member-role {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.member-role select {
+  border-radius: 2rem;
+  outline: none;
+  padding: 1rem;
+}
+
+.auth-footer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 0.4rem;
+}
+
+.error-msg {
+  font-size: 1.4rem;
+  color: var(--error);
+}
